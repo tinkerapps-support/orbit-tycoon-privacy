@@ -27,6 +27,9 @@
     a { color: #1a73e8; }
     ul { margin: 0 0 16px; padding-left: 24px; }
     li { margin-bottom: 8px; }
+    table { border-collapse: collapse; width: 100%; margin: 0 0 16px; font-size: 0.95rem; }
+    th, td { border: 1px solid #e0e0e0; padding: 8px 12px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -37,11 +40,11 @@
   <h2>Overview</h2>
   <p>
     Orbit Tycoon is a mobile game developed by Tinker Apps. Tinker Apps does not
-    intentionally collect or store personal data on its own servers. However, Tinker
-    Apps configures and integrates certain third-party services (such as Google
-    services) that may process data independently as described in this policy. Tinker Apps does not control how Google
-    or its services collect, use, or share data. Tinker Apps does not sell personal data.
-    All Google services referenced in this policy operate under
+    operate its own backend servers and does not intentionally store personal data on
+    infrastructure controlled by Tinker Apps. However, certain third-party services
+    integrated into the app (such as Google services) process data on our behalf or as
+    independent data controllers, as described in this policy. Tinker Apps does not sell
+    personal data. All Google services referenced in this policy operate under
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
   </p>
 
@@ -53,12 +56,35 @@
 
   <h2>Data We Collect</h2>
   <p>
-    Tinker Apps does not collect or store personal data on its own servers. Game
+    Tinker Apps does not operate its own backend servers and does not intentionally
+    store personal data on infrastructure it controls. Game
     progress — including credits, upgrades, inventory, and settings — is stored
     locally on your device. If you sign in to Google Play Games, this progress data
     is synced to your Google account. Game save data is designed not to include
     directly identifying personal information.
   </p>
+
+  <h2>Third-Party Services We Use</h2>
+  <p>
+    Orbit Tycoon integrates the following third-party software development kits (SDKs)
+    provided by Google, each of which may process data as described in the sections below
+    and under
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+    The app itself does not use cookies or web tracking pixels; these SDKs may use device
+    identifiers and similar technologies to provide their services:
+  </p>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Google AdMob</td><td>Advertising (interstitial and rewarded ads)</td></tr>
+      <tr><td>Google Firebase Analytics</td><td>Aggregate usage analytics</td></tr>
+      <tr><td>Google Firebase Crashlytics</td><td>Crash and error reporting</td></tr>
+      <tr><td>Google Play Games Services</td><td>Sign-in, cloud saves, achievements</td></tr>
+      <tr><td>Google Play Billing</td><td>In-app purchases</td></tr>
+    </tbody>
+  </table>
 
   <h2>Google AdMob</h2>
   <p>
@@ -155,8 +181,9 @@
     <li><strong>App activity</strong> — achievement progress and cloud save data used to power Google Play Games features</li>
   </ul>
   <p>
-    Tinker Apps does not control how Google collects or uses this data, and does
-    not access, store, or share it. Google Play Games Services operates under
+    Tinker Apps accesses Play Games data only to provide sign-in, cloud saves, and
+    achievements, and does not store it on its own servers or use it for any other
+    purpose. Google Play Games Services operates as an independent data controller under
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
   </p>
 
@@ -175,9 +202,12 @@
     This data is processed by Google under
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
     Tinker Apps uses this data in aggregate only to improve gameplay and does not
-    use it to directly identify individual users. You may be able to limit certain
-    data collection through your device or Google privacy settings, though some
-    analytics or diagnostic data may still be collected to support app functionality.
+    use it to directly identify individual users. In the EEA, UK, and Switzerland,
+    Firebase Analytics does not store or use device identifiers until you consent
+    through Google's consent message; if consent is not given, analytics identifiers
+    remain disabled (Analytics may still record limited, non-identifying information
+    needed for basic operation). You may also be able to limit certain data collection
+    through your device or Google privacy settings.
   </p>
 
   <h2>Firebase Crashlytics</h2>
@@ -221,8 +251,9 @@
     Google services integrated into Orbit Tycoon (AdMob, Firebase Analytics,
     Firebase Crashlytics, Google Play Games Services, and Google Play Billing)
     may transfer and process data in the United States and other countries outside
-    the EEA, the UK, and Switzerland. Google relies on Standard Contractual Clauses
-    approved by the European Commission as the legal mechanism for these transfers.
+    the EEA, the UK, and Switzerland. Google uses legally approved mechanisms for these
+    international data transfers, including the European Commission's Standard
+    Contractual Clauses where applicable.
     For more information, see
     <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener">Google's data transfer frameworks</a>.
   </p>
@@ -252,13 +283,25 @@
     <li><strong>Local game data</strong> — uninstall the app or clear app data in your device settings.</li>
     <li><strong>Cloud save and achievement data</strong> — delete via your Google Play Games profile or Google Account settings under <em>Settings &gt; Delete Play Games account and data</em>.</li>
     <li><strong>AdMob data</strong> — managed by Google; visit <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>.</li>
-    <li><strong>Firebase Analytics &amp; Crashlytics data</strong> — managed by Google; visit <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a> to manage data associated with your Google account.</li>
+    <li><strong>Firebase Analytics &amp; Crashlytics data</strong> — processed through Google services and may not always be associated with your Google account. Retention and deletion are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
   </ul>
   <p>
     Some data collected by third-party services (such as Firebase Analytics and
     Crashlytics) may not be individually identifiable or deletable, but is used in
     aggregate and retained according to Google's data retention policies.
   </p>
+
+  <h2>Your Choices</h2>
+  <p>
+    You have several controls over the data processed through the app:
+  </p>
+  <ul>
+    <li><strong>Withdraw or change ad/analytics consent</strong> (EEA, UK &amp; Switzerland) — open <em>Settings &gt; Manage Ad Privacy Options</em> in the app to re-present the Google consent message.</li>
+    <li><strong>Opt out of personalised ads / reset your advertising ID</strong> — in your device settings under <em>Settings &gt; Google &gt; Ads</em>.</li>
+    <li><strong>Delete Play Games data</strong> — via your Google Play Games profile or Google Account settings under <em>Settings &gt; Delete Play Games account and data</em>.</li>
+    <li><strong>Manage data held by Google</strong> — at <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>.</li>
+    <li><strong>Remove local game data</strong> — uninstall the app or clear app data in your device settings.</li>
+  </ul>
 
   <h2>Your Rights (EEA, UK &amp; Switzerland)</h2>
   <p>
@@ -288,12 +331,39 @@
     </li>
   </ul>
 
+  <h2>Your Rights (U.S. Residents)</h2>
+  <p>
+    Depending on your state of residence (for example, California, Virginia, Colorado,
+    Connecticut, Utah, or Texas), you may have rights under applicable state privacy
+    laws, including the right to:
+  </p>
+  <ul>
+    <li>Know what categories of personal information are collected about you.</li>
+    <li>Request deletion of personal information.</li>
+    <li>Request correction of inaccurate personal information.</li>
+    <li>Opt out of targeted advertising or the "sale" or "sharing" of personal information.</li>
+  </ul>
+  <p>
+    Tinker Apps does not sell personal information. Because personal data relating to the
+    app is processed by Google services rather than held by Tinker Apps, many of these
+    rights can be exercised through your
+    <a href="https://myaccount.google.com" target="_blank" rel="noopener">Google account</a>
+    and Google's advertising controls. You may also contact us at
+    <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>
+    to make a request, and we will assist where reasonably possible or direct you to the
+    appropriate Google privacy controls. We will not discriminate against you for
+    exercising any of these rights.
+  </p>
+
   <h2>Children's Privacy</h2>
   <p>
     Orbit Tycoon is not directed at children. We do not knowingly collect personal
     information from anyone below the minimum digital consent age in their
     jurisdiction — age 13 in the United States, or up to age 16 in certain EEA
-    member states. If you believe a child below the applicable age has used the app
+    member states. While the app is not directed to children, we use age signals where
+    available (see <em>Age Signals &amp; Age-Appropriate Experiences</em> above) to
+    provide age-appropriate experiences and to comply with applicable laws. If you
+    believe a child below the applicable age has used the app
     in a way that has transmitted personal data, please contact us at
     <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>
     so we can take appropriate action.
@@ -316,13 +386,15 @@
     the following legal bases under GDPR and equivalent laws:
   </p>
   <ul>
-    <li><strong>Legitimate interests</strong> — Firebase Crashlytics is used to maintain app
-    stability and security. Crash data is not used by Tinker Apps to directly identify users
-    by name, email, or similar directly identifying information.</li>
-    <li><strong>Legitimate interests or consent where required by law</strong> — Firebase
-    Analytics may be used to understand aggregate gameplay trends. Where applicable law
-    requires a stronger legal basis for analytics involving device identifiers, we rely on
-    that basis or limit collection accordingly.</li>
+    <li><strong>Legitimate interests (Firebase Crashlytics)</strong> — Crashlytics is used
+    to maintain app stability and security. Crash data is not used by Tinker Apps to directly
+    identify users by name, email, or similar directly identifying information.</li>
+    <li><strong>Firebase Analytics</strong> — in the EEA, UK, and Switzerland, analytics that
+    rely on device identifiers run only after you consent through Google's consent message;
+    until you consent, and if you decline, analytics storage stays disabled. Outside those
+    regions, Firebase Analytics is processed under our legitimate interests in understanding
+    aggregate app performance and improving gameplay. Analytics data is used only in aggregate
+    and is not used to identify individual users.</li>
     <li><strong>Consent (EEA, UK &amp; Switzerland)</strong> — for users in these regions,
     ad personalisation is based on the consent you provide through Google's User Messaging
     Platform consent message. You can change or withdraw this consent at any time under
@@ -333,6 +405,21 @@
     For data processed directly by Google services, Google acts as an independent data
     controller and relies on its own legal bases as described in
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+  </p>
+
+  <h2>Automated Decision-Making</h2>
+  <p>
+    Orbit Tycoon does not use automated decision-making or profiling that produces legal or
+    similarly significant effects concerning you.
+  </p>
+
+  <h2>Data Breach Notification</h2>
+  <p>
+    Tinker Apps does not store personal data on its own infrastructure. In the event of a
+    qualifying personal-data breach, and where required by applicable law, Tinker Apps will
+    notify the relevant supervisory authorities and affected users without undue delay (for
+    example, within 72 hours of becoming aware, as required under the GDPR). Data processed by
+    Google services is also subject to Google's own breach-notification obligations.
   </p>
 
   <h2>Changes to This Policy</h2>
@@ -347,7 +434,8 @@
 
   <h2>Contact</h2>
   <p>
-    If you have questions about this privacy policy, contact us at:<br />
+    If you have questions about this privacy policy, or wish to submit a privacy
+    request, contact us at:<br />
     <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>
   </p>
 
