@@ -35,7 +35,7 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Orbit Tycoon &nbsp;·&nbsp; Last updated: July 14, 2026</p>
+  <p class="subtitle">Orbit Tycoon &nbsp;·&nbsp; Last updated: August 16, 2026</p>
 
   <h2>Overview</h2>
   <p>
@@ -193,14 +193,39 @@
   <h2>Firebase Analytics</h2>
   <p>
     Orbit Tycoon uses Google Firebase Analytics to understand how players interact
-    with the game. Firebase Analytics may automatically collect:
+    with the game. Some of this is collected automatically by the Firebase SDK; the game
+    also deliberately records events of its own, listed below. Firebase Analytics may
+    collect:
   </p>
   <ul>
-    <li>App events (e.g. session start, first open, in-app purchases)</li>
+    <li>App events — for example: opening the app and starting a session, which screen you
+    are on (orbit view, market, contracts, settings), deploying satellites, buying upgrades
+    (and when you tried to and could not afford it), accepting and completing contracts,
+    spending premium tokens and what you spent them on, running a Kessler Protocol prestige,
+    tutorial progress, rewarded and full-screen ad placements and whether an ad was watched,
+    each step of an in-app purchase (starting checkout, completing it, or the reason one did
+    not complete), and whether you are signed in to Google Play Games and whether a cloud
+    save was restored</li>
+    <li><strong>Purchase events, including the amount and currency</strong> of an in-app
+    purchase you complete, so that revenue can be reported alongside gameplay. Tinker Apps
+    never receives, sees, or stores your payment details — see <em>Google Play Billing</em>
+    below.</li>
     <li>Device information (model, OS version, language)</li>
     <li>A randomly-generated app instance ID</li>
     <li>Approximate location derived from IP address</li>
   </ul>
+  <p>
+    <strong>Player segments.</strong> Alongside individual events, Orbit Tycoon records a
+    small set of coarse labels describing what kind of player you are, so that the reports
+    above can be broken down by group rather than read as one undifferentiated total. For
+    Orbit Tycoon these are: whether you have bought the No Ads Pack or the Starter Pack,
+    whether you have made any purchase at all, which orbit stage you have reached, how many
+    prestige runs you have completed, roughly how large your fleet is, roughly how much
+    debris you have captured, whether you finished the tutorial, and whether you are signed
+    in to Google Play Games. These labels are deliberately coarse ranges rather than exact
+    values (for example "10–29 captures", not "seventeen captures"), they describe your
+    activity in this game only, and they are not used to target advertising.
+  </p>
   <p>
     This data is processed by Google under
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
